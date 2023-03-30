@@ -22,7 +22,7 @@ function verificacaoDeTexto() {
         opacidade[0].style.display = "block";
     }else{
         console.log("ok")
-        nome.style.border = "1px solid #202632";
+        nome.style.border = "1px solid #3CCC87";
         opacidade[0].style.display = "none";
     }
 }
@@ -33,7 +33,7 @@ function verificacaoDeTelefone() {
         opacidade[1].style.display = "block";
     }else{
         console.log("ok")
-        telefone.style.border = "1px solid #202632";
+        telefone.style.border = "1px solid  #3CCC87";
         opacidade[1].style.display = "none";
     }
 };
@@ -45,7 +45,7 @@ function verificacaoDeEmail() {
         opacidade[2].style.display = "block";
     }else{
         console.log("ok")
-        email.style.border = "1px solid #202632";
+        email.style.border = "1px solid  #3CCC87";
         opacidade[2].style.display = "none";
     }
 };
@@ -58,7 +58,7 @@ function verificacaoDeMensagem() {
         aviso.style.padding = "20px 5px 5px 5px";
     }else{
         console.log("ok")
-        mensagem.style.border = "1px solid #202632";
+        mensagem.style.border = "1px solid #3CCC87";
         opacidade[3].style.display = "none";
         aviso.style.padding = "0px 5px 5px 5px";
     }
