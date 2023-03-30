@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario</title>
+
+    <link rel="stylesheet" href="Reset.css">
+    <link rel="stylesheet" href="formulario.css">
+</head>
+<main class="main">
+    <div class="texto">
+        <h1>FICOU COM DÚVIDA?<br> NOS MANDE UMA MENSAGEM!</h1>
+        <p>caso tenha ficado com qualquer dúvida basta nos mandar uma mensagem e entraremos em contato em menos de 24h.</p>
+    </div>
+    <form action="#" class="formulario" id="form">
+       <div>
+        <input type="text" name="nome" id="nome" class="nome" placeholder="Nome Completo*" oninput="verificacaoDeTexto()">
+        <p class="opacidade">Campo obrigatório</p> <br>
+       </div>
+
+       <div>
+        <input type="text" name="telefone" id="telefone"  class="telefone" placeholder=" Telefone*" oninput="verificacaoDeTelefone()"> 
+        <p class="opacidade">Campo obrigatório</p><br>
+       </div> 
+       
+       <div> 
+        <input type="text" name="email" id="email" class="email" placeholder="E-mail*" oninput="verificacaoDeEmail()"> 
+        <p class="opacidade">Campo obrigatório</p><br>
+       </div> 
+       
+       <div>
+        <textarea name="mensagem" id="mensagem" cols="40" rows="10" class="mensagem" placeholder="Mensagem*" oninput="verificacaoDeMensagem()"></textarea><br>
+        <p class="opacidade">Campo obrigatório</p>
+       </div> 
+
+        <h2 class="aviso">Campos obrigatórios</h2>
+        
+        <button type="submit" class="botao">Enviar</button>
+    </form>
+</main>
+
+<script src="formulario.js"></script>
+<body>
+    
+</body>
+</html>
