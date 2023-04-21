@@ -75,3 +75,15 @@
     margin-bottom: 5px;
 }
 
+/* Responsivo */
+@media (max-width:450px){
+    .main{
+        display: block;
+        padding-left: 5%;
+        padding-top:  30%;
+        overflow: hidden;
+    }
+    .main .texto{
+        text-align: center;
+    }
+}
