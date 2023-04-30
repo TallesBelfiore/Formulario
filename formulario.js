@@ -7,7 +7,6 @@ const form = document.getElementById("form");
 
 form.addEventListener ('submit', (Event)=>{
     Event.preventDefault();
-    console.log("ok");
     verificacaoDeTexto();
     verificacaoDeTelefone();
     verificacaoDeEmail();
