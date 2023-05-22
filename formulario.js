@@ -20,7 +20,7 @@ function verificacaoDeTexto() {
         nome.style.border = "2px solid #f44336";
         opacidade[0].style.display = "block";
     }else{
-        console.log("ok")
+        console.log("Nome aceito")
         nome.style.border = "2px solid #3CCC87";
         opacidade[0].style.display = "none";
     }
@@ -31,41 +31,36 @@ function verificacaoDeTelefone() {
         telefone.style.border = "2px solid #f44336";
         opacidade[1].style.display = "block";
     }else{
-        console.log("ok")
+        console.log("Telefone aceito")
         telefone.style.border = "2px solid  #3CCC87";
         opacidade[1].style.display = "none";
     }
 };
 
+
 function verificacaoDeEmail() {
+
     if (email.value.length < 6) {
         console.log("erro no endereço de email")
         email.style.border = "2px solid #f44336";
         opacidade[2].style.display = "block";
     }else{
-        console.log("ok")
+        console.log("E-mail aceito")
         email.style.border = "2px solid  #3CCC87";
         opacidade[2].style.display = "none";
     }
 };
 
-function validateEmail(email) {
-  var re = /\S+@\S+\.\S+/;
-  return re.test(email);
-} 
-
 function verificacaoDeMensagem() {
-   
+
     if (mensagem.value.length < 4) {
         console.log("erro no campo de mensagem")
         mensagem.style.border = "2px solid #f44336";
-        opacidade[3].style.display = "block";
-        aviso.style.padding = "20px 5px 5px 5px";
+        opacidade[3].style.display = "block";    
     }else{
-        console.log("ok")
+        console.log("Mensagem aceita ")
         mensagem.style.border = "2px solid #3CCC87";
         opacidade[3].style.display = "none";
-        aviso.style.padding = "0px 5px 5px 5px";
     }
 };
 
