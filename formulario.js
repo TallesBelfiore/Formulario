@@ -15,8 +15,8 @@ form.addEventListener ('submit', (Event)=>{
 
 
 function verificacaoDeTexto() {
-    if (nome.value.length < 6) {
-        console.log("erro")
+    if (nome.value.length < 4) {
+        console.log("erro ao digitar o nome")
         nome.style.border = "2px solid #f44336";
         opacidade[0].style.display = "block";
     }else{
@@ -27,7 +27,7 @@ function verificacaoDeTexto() {
 }
 function verificacaoDeTelefone() {
     if (telefone.value.length < 9) {
-        console.log("erro")
+        console.log("erro com o numero de telefone")
         telefone.style.border = "2px solid #f44336";
         opacidade[1].style.display = "block";
     }else{
@@ -39,7 +39,7 @@ function verificacaoDeTelefone() {
 
 function verificacaoDeEmail() {
     if (email.value.length < 6) {
-        console.log("erro")
+        console.log("erro no endereço de email")
         email.style.border = "2px solid #f44336";
         opacidade[2].style.display = "block";
     }else{
@@ -48,10 +48,16 @@ function verificacaoDeEmail() {
         opacidade[2].style.display = "none";
     }
 };
+
+function validateEmail(email) {
+  var re = /\S+@\S+\.\S+/;
+  return re.test(email);
+} 
+
 function verificacaoDeMensagem() {
-    const aviso = document.querySelector(".aviso");
-    if (mensagem.value.length < 10) {
-        console.log("erro")
+   
+    if (mensagem.value.length < 4) {
+        console.log("erro no campo de mensagem")
         mensagem.style.border = "2px solid #f44336";
         opacidade[3].style.display = "block";
         aviso.style.padding = "20px 5px 5px 5px";
@@ -62,5 +68,6 @@ function verificacaoDeMensagem() {
         aviso.style.padding = "0px 5px 5px 5px";
     }
 };
+
 
 
